@@ -1,0 +1,7 @@
+<div *ngIf="selectedPackage">
+    <h2>Detalles del Paquete</h2>
+    <h3>{{ selectedPackage.name }}</h3>
+    <p>{{ selectedPackage.description }}</p>
+    <p><strong>Precio: ${{ selectedPackage.price }}</strong></p>
+    <button (click)="reservar()">Reservar</button>
+</div>

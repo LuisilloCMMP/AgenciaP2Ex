@@ -1,0 +1,86 @@
+:root {
+  --color-primario: #FF7E5F;
+  --color-secundario: #2A9D8F;
+  --color-fondo: #F4F1DE;
+  --color-texto: #333;
+  --color-acento: #E76F51;
+  --color-hover: #264653;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 1rem;
+  background: var(--color-secundario);
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: var(--color-hover);
+  border-radius: 5px;
+}
+
+button {
+  background: var(--color-acento);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: var(--color-hover);
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  background: var(--color-hover);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
